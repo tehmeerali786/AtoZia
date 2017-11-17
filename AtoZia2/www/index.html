@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <style type="text/css">
+
+
+        body * {
+
+            text-transform: none;
+        }
+
+        .header1 {
+
+            font-size: 40px;
+            font-family: "Arial";
+            font-weight: bold;
+        }
+
+        .header2 {
+
+            font-size: 40px;
+            font-family: "Courier New";
+            font-weight: bold;
+
+        }
+
+        .Call {
+
+            margin-bottom: 40px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .Call1 {
+
+            color: red;
+            font-weight: bold;
+        }
+
+        #lists {
+
+            width: 70% !important;
+            margin: 0 auto;
+        }
+
+        #plan {
+
+            font-size: 120% !important;
+            font-weight: bold;
+            margin-top: 10% !important;
+        }
+
+        #number1 {
+            color: red;
+            font-weight: bold;
+        }
+
+        .image {
+
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>;
+
+        
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="../jquery.mobile-1.0rc2/jquery.mobile-1.0rc2.css" />
+    <script src="../jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="../jquery.mobile-1.0rc2/jquery.mobile-1.0rc2.js" type="text/javascript"></script>
+    <title>Zia Limos</title>
+
+</head>
+
+<body>
+    <section id="firstpage" data-role="page" data-theme="a">
+        <header data-role="header" data-theme="d">
+        <div><h1 class="header1">Zia Limos</h1></div>
+        <div><h1 class="header2">Town Car Service</h1></div>
+
+        <nav data-role="navbar">
+
+        <div data-role="listview">
+        
+                
+                
+                    <ul>
+                        <li><a href="#firstpage" class="ui-btn-active ui-state-persist" data-icon="grid">Home</a></li>
+                        <li><a href="#secondpage" data-transition="fade" data-icon="grid">About Us</a></li>
+                        <li><a href="#thirdpage" data-transition="pop" data-icon="grid">Services</a></li>
+                        <li><a href="#fourthpage" data-transition="slideup" data-icon="grid">Contact Us</a></li>
+                    </ul> 
+
+                    
+                </div>   
+
+
+                </nav>               
+        
+              
+        </header>
+        <div data-role="content">
+        <marquee bgcolor="#000000" style="color:#ffffff; font-size:14pt" scrollamount="4" height="36">For all your transportation needs, ANY event, ANY occasion!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Airport Service Specialist</marquee>
+        </div>
+
+        <div data-role="content">
+
+
+        <img src='img/picture.png' class="image" />
+
+        <p class="Call1">Call:  +1-817-996-3480</p>
+        <p class="Call">Call NOW we are open 24/7</p>
+
+
+
+        <h2 class="ui-overlay-e">DFW Airport Transportation</h2>
+        <p>Get a luxurious travel with our clean and latest car models. Your safety and comfort is much more important for us than anything else. Our main motto is to provide a convenient, comfortable and reliable airport service. We believe in quality service as well as relaxing ride. It is one of the running taxi services best known for its fair price, comfortable cabs and careful drivers. Arlington Taxi Service is the safest transportation services focused on providing transportation service to corporate clients as well as visitors. We are specialized in furnishing gracious staff, cheaper and safer taxi service. Invariably we offer trained drivers and insured service, constantly meets all your transportation needs, gives a full assurance of providing licensed, professional drivers. </p>
+
+        <p>Undoubtedly you can hire us for your medical visits, social visits or even for shopping. It is best suit to your needs. Our service is well known for corporate meetings and for resident visits. Book us and get an immediate service.</p>
+
+        <h2 id="plan">You can chose one of the following plans for a better service</h2>
+
+
+        </div>
+
+
+         
+        <ul id="lists" data-role="listview" data-theme="e" data-inset="true">
+            
+            <li>DFW airport transportation</li>
+            <li>Euless Taxi Service</li>
+            <li>Kennedale Taxi Service</li>
+            <li>Fort Worth limo service</li>
+            <li>Burleson Taxi service</li>
+
+        </ul>
+
+        
+
+        <div data-role="content">
+
+        <h3 id="Pride">Pride in our fleet</h3>
+        <p>Whatever the occasion from corporate travel to a romantic evening on the town, we have the knowledge and experience to make every event a special event! Whether you require limousine service in Metroplex DFW, Texas, our experienced staff is ready to serve you.</p>
+        </div>
+        <footer data-role="footer"><h3> Copyrights @ Zia Limos</h3></footer>
+    </section>
+
+    <!-- This is the second page -->
+    <section id="secondpage" data-role="page" data-theme="a">
+        <header data-role="header" data-theme="d">
+        <div><h1 class="header1">Zia Limos</h1></div>
+        <div><h1 class="header2">Town Car Service</h1></div>
+        <nav data-role="navbar">
+                    
+                <div data-role="listview">
+                    <ul>
+                        <li><a href="#firstpage"  data-transition="flip" data-icon="grid">Home</a></li>
+                        <li><a href="#secondpage" class="ui-btn-active ui-state-persist" data-icon="grid">About Us</a></li>
+                        <li><a href="#thirdpage" data-transition="pop" data-icon="grid">Services</a></li>
+                        <li><a href="#fourthpage" data-transition="slideup" data-icon="grid">Contact Us</a></li>
+                    </ul> 
+                </div>                  
+        </nav>
+        </header>
+        <div data-role="content">
+        <p class="Call1">Call:  +1-817-996-3480</p>
+        <p class="Call">Call NOW we are open 24/7</p>
+
+
+
+        <h2>Air Port Taxi DFW</h2>
+        <p>  we have town car and taxi service Dallas/Fort Worth TX area and surrounding areas that you need for local commute, long distance transportation, airport service and more.           We aim  to be the best transportation company for all your taxi service needs.</p>
+
+            <p>We provide transportation anywhere you need to go. All of our vehicles are equipped with GPS navigation systems. We will go wherever you need to go and provide the best pricing possible for your trip. You don't need coupons or discounts with us because we already have lowered prices.</p>
+
+<p> We've been serving private, commercial and corporate clients for over 17 years. We are the insured; that always take full care of you, so call a cab today at <span id="number1">+1-817-996-3480 (24X7)</span>.</p>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <footer data-role="footer"><h3> Copyrights @ Zia Limos</h3></footer>
+    </section>
+
+    
+
+    <section id="thirdpage" data-role="page" data-theme="a">
+        <header data-role="header" data-theme="d">
+        <div><h1 class="header1">Zia Limos</h1></div>
+        <div><h1 class="header2">Town Car Service</h1></div>
+        <nav data-role="navbar">
+                    
+        <div data-role="listview">
+                    <ul>
+                        <li><a href="#firstpage"  data-transition="flip" data-icon="grid">Home</a></li>
+                        <li><a href="#secondpage" data-transition="fade" data-icon="grid">About Us</a></li>
+                        <li><a href="#thirdpage" class="ui-btn-active ui-state-persist" data-icon="grid">Services</a></li>
+                        <li><a href="#fourthpage" data-transition="slideup" data-icon="grid">Contact Us</a></li>
+                    </ul> 
+                 </div>                     
+        </nav>
+        </header>
+        
+
+        <div data-role="content">
+        <marquee bgcolor="#000000" style="color:#ffffff; font-size:14pt" scrollamount="4" height="36">For all your transportation needs, ANY event, ANY occasion!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Airport Service Specialist</marquee>
+        </div>
+
+        <div data-role="content">
+
+        <p class="Call1">Call:  +1-817-996-3480</p>
+        <p class="Call">Call NOW we are open 24/7</p>
+
+
+
+        <h2>Sedan Car Service DFW</h2>
+
+        <h3>Planning a vacation, trip or tour?</h3>
+
+        <h4>Consider us for:</h4>
+
+
+        <ul id="lists" data-role="listview" data-theme="e" data-inset="true">
+            
+            <li>DFW & Lovefield Airport Service</li>
+            <li>All Airport Service</li>
+            <li>Custom Tours Service</li>
+            <li>Sport Events</li>
+            <li>Casino Trip</li>
+            <li>Business and Corporate Functions</li>
+            <li>Private Parties</li>
+            <li>Church and Club Functions</li>
+            <li>Bachelor Parties Service</li>
+
+        </ul>
+
+        <h4>City Wise Services:</h4>
+
+        <ul id="lists" data-role="listview" data-theme="e" data-inset="true">
+            
+            <li>Arlington Car Service</li>
+            <li>Mansfield City Car Service</li>
+            <li>Grand Prairie Car Service</li>
+            <li>Forth Worth Car Service</li>
+            <li>All Round Metroplex 100 Miles</li>
+            <li>Business and Corporate Functions</li>
+            <li>Kennedale Car Service</li>
+            <li>HEB Area Car Service</li>
+            
+
+        </ul>
+
+
+
+
+        </div>
+        <footer data-role="footer"><h3> Copyrights @ Zia Limos</h3></footer>
+    </section>
+
+    <section id="fourthpage" data-role="page" data-theme="a">
+        <header data-role="header" data-theme="d">
+        <div><h1 class="header1">Zia Limos</h1></div>
+        <div><h1 class="header2">Town Car Service</h1></div>
+        <nav data-role="navbar">
+                    
+
+                <div data-role="listview">
+                    <ul>
+                        <li><a href="#firstpage"  data-transition="flip" data-icon="grid">Home</a></li>
+                        <li><a href="#secondpage" data-transition="fade" data-icon="grid">About Us</a></li>
+                        <li><a href="#thirdpage" data-transition="pop" data-icon="grid">Services</a></li>
+                        <li><a href="#fourthpage" class="ui-btn-active ui-state-persist" data-icon="grid">Contact Us</a></li>
+                    </ul> 
+                </div>                  
+        </nav>
+        </header>
+        <div data-role="content">
+        <h1 id="contactp">Airport Taxi Fort Worth</h1>
+        <p id="pick">Phone:<a href="tel:+1-817-996-3480"><font size="5">Call: +1-817-996-3480 </font></a></p>
+        <p>CALL NOW! We are open.</p>
+        <p>Email: info@zialimos.com</p>
+
+
+        <p style="color:red;">Or if you have email service enabled at your phone, e-mail us through form below.</p>
+
+        <form action="mailto:freelanceali786@gmail.com" method="post" enctype="text/plain">
+
+        <fieldset data-role="fieldcontain">
+
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" value="" placeholder="Your Name" data-theme="b">
+
+        <br/>
+
+        <label for="cellnumber">Your Cell Number:</label>
+        <input type="text" name="cellnumber" id="cellnumber" value="" placeholder="Your Cell Number" data-theme="b">
+
+        <br/>
+
+        <label for="texta">Your Message:</label>
+        <textarea id="texta" data-theme="b"></textarea>
+
+        <input type="submit" value="Submit">  <input type="reset" value="Reset">
+
+
+        </fieldset>
+            
+        </form>
+        <br/>
+        <br/>
+
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+
+        <footer data-role="footer"><h3> Copyrights @ Zia Limos</h3></footer>
+    </section>
+</body>
+
+</html>
